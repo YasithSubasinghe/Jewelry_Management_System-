@@ -1,0 +1,13 @@
+{
+  "name": "jewelary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "HTML ALL/sass ./sass/style.scss style.css --watch"
+ },
+  "author": "Group11",
+  "license": "ISC"
+}
+ 

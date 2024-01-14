@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Poppins&family=Raleway&family=Roboto+Mono&family=Rubik&display=swap");
+/* sass template */
+/* global classes*/
+button, button:focus { /*button click effect*/
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*typography classes*/
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursive;
+}
+
+.font-pop {
+  font-family: "Poppins", cursive;
+}
+
+.font-rubik {
+  font-family: "Rubik", cursive;
+}
+
+.font-robot {
+  font-family: "Robot Mono", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/*color template*/
+.color-primary {
+  color: #151313;
+}
+
+.color-primary-bg {
+  background: #151313;
+}
+
+.color-second {
+  color: #cccccc;
+}
+
+.color-second-bg {
+  background: #151313;
+}
+
+.color-gold {
+  color: #a8741a;
+}
+
+.color-gold-bg {
+  background: #a8741a;
+}
+
+/*  top sale template   */
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1); /*scale on*/
+}
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #151313;
+  padding: 0 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+
+/*   Special Price Section Template */
+#special-price .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* **********Slider Section *************** */
+.single_slider {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.slider_area {
+  margin-bottom: 35px;
+}
+
+.slider_area.owl-carousel .owl-dots { /*dots in slider*/
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.slider_area.owl-carousel .owl-dots .owl-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #242424;
+  margin: 0 5px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.slider_area.owl-carousel .owl-dots .owl-dot.active {
+  transition: 0.3s;
+}
+
+.slider_area.owl-carousel .owl-dots .owl-dot.active::before {
+  position: absolute;
+  content: "";
+  background: #a8741a;
+  width: 13px;
+  height: 13px;
+  left: -3px;
+  top: -3px;
+  border-radius: 50%;
+}
+
+.slider_area .single_slider .row { /*slider height*/
+  height: 600px;
+}
+
+.slider_area .slider_content {
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.slider_black .slider_content p {
+  color: #a8741a;
+  font-size: 18px;
+  margin-bottom: 0;
+  line-height: 22px;
+}
+
+.slider_black .slider_content p.slider_price {
+  color: #fff;
+}
+
+.slider_black .slider_content p.slider_price span {
+  color: #a8741a;
+  margin-bottom: 0;
+}
+
+.slider_black .slider_content h1 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-family: "Baloo 2", serif;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .slider_black .slider_content h1 {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 8px;
+  }
+}
+.slider_black .slider_content span {
+  font-size: 24px;
+  color: #cccccc;
+  margin-bottom: 35px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .slider_black .slider_content span {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+}
+.slider_black .slider_content a {
+  background: #a8741a;
+  margin-top: 30px;
+}
+
+.slider_black .slider_content a:hover {
+  background: #212121;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .slider_black .slider_content a {
+    margin-top: 43px;
+  }
+}
+.active .slider_content > span {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
+  animation-delay: 0.7s;
+}
+
+.active .slider_content p,
+.active .slider_content h1,
+.active .slider_content a {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
+  animation-delay: 0.3s;
+}
+
+.active .slider_content h1 {
+  animation-delay: 0.6s;
+}
+
+.active .slider_content a {
+  animation-delay: 0.9s;
+}
+
+.slider_content p {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #242424;
+  margin-bottom: 11px;
+  text-transform: capitalize;
+}
+
+.slider_content h1 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #212121;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.slider_content p.slider_price {
+  color: #fff;
+  font-size: 18px;
+}
+
+.slider_content p.slider_price span {
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 8px;
+  color: #a8741a;
+  margin-bottom: 0;
+}
+
+.slider_content a {
+  font-weight: 500;
+  margin-top: 25px;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 35px;
+}
+
+.slider_content a:hover {
+  background: #212121;
+}
+
+.button {
+  background: #a8741a;
+  box-shadow: none;
+  color: #fff;
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 22px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+/* **********Slider Section end*************** */
+/* banner section  */
+.banner_fullwidth {
+  background: url(banner2222.jpg);
+  margin-bottom: 64px;
+}
+
+.banner_fullwidth .row {
+  height: 510px;
+}
+
+.black_fullwidth .banner_text:hover {
+  transform: scale(1.1);
+}
+
+.black_fullwidth .banner_text p {
+  color: #a8741a;
+}
+
+.black_fullwidth .banner_text h2 {
+  color: #fff;
+  font-family: serif;
+  font-weight: 400;
+}
+
+.black_fullwidth .banner_text span {
+  color: #a0a0a0;
+}
+
+.black_fullwidth .banner_text a {
+  color: #a8741a;
+  border: 2px solid #a8741a;
+}
+
+.black_fullwidth .banner_text a:hover {
+  color: #fff;
+  background: #a8741a;
+}
+
+.banner_text {
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.banner_text p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.banner_text h2 {
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.banner_text > span {
+  font-size: 16px;
+  margin: 0;
+  display: block;
+}
+
+.banner_text a {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #a8741a;
+  border: 2px solid #a8741a;
+  padding: 0 45px;
+  border-radius: 3px;
+  margin-top: 70px;
+  line-height: 46px;
+  display: inline-block;
+}
+
+/* banner section over */
+/* ********** small banner section ************ */
+.banner_black .banner_content {
+  transition: 0.5s;
+  bottom: 25px;
+  top: inherit;
+}
+
+.banner_black .banner_content p {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.banner_black .banner_content h2 {
+  color: #a8741a;
+  font-weight: 400;
+  font-family: "Baloo 2", serif;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner_black .banner_content h2 {
+    font-size: 21px;
+    line-height: 23px;
+    margin-bottom: 13px;
+  }
+}
+.banner_black .banner_content span {
+  color: #fff;
+}
+
+.banner_black .banner_thumb:hover .banner_content {
+  transform: scale(1.1);
+}
+
+.banner_thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner_thumb::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.11);
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.banner_thumb img {
+  transition: 0.3s;
+}
+
+.banner_thumb:hover::before {
+  opacity: 1;
+}
+
+.banner_thumb:hover img {
+  transform: scale(1.1);
+}
+
+.banner_black .banner_thumb:hover .banner_content {
+  transform: scale(1.1);
+}
+
+.banner_content {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.banner_content p {
+  color: #7d7d7d;
+  margin-bottom: 0;
+}
+
+.banner_content h2 {
+  color: #242424;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+
+.banner_content span {
+  color: #242424;
+}
+
+/* ****************small banner section overs ************** */
+
+/*# sourceMappingURL=style.css.map */
+

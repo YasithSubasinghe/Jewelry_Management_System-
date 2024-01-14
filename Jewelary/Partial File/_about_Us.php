@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type ="text/css" href = "about.css">
+    <link rel ="preconnect" href="https://fonts.googleapis.com">
+    <link rel ="preconnect" href="https://fonts.gstatic.com"crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+</head>
+<body>
+<section class="about">
+    <div class="main">
+        <img src="./assests/jewel.png"style="width:58%;" >
+        <div class="about-text">
+            <h1>About Us</h1>
+            <h5>Welcome to <span>Opna Gems & Jewellery</span></h5>
+            <p>
+                To challenge the costly and antiquated jewellery market models, we founded Opna Gem & Jewellery. Our first watch line, which was made possible by crowdsourcing, set us apart by offering you high-quality, simple designs at remarkably reasonable pricing. We expanded through social media far beyond our Galle (Unawatuna) base and became a well-known jewelry store. Above all, we create with the hope of bringing our final goal to life.
+            </p>
+            <br><br><br><br><br>
+        </div>
+    </div>
+    <table class="center">
+        <tr>
+            <th>Rupasinghe Imaduwa</th>
+            <th>Shehan Rupasinghe</th>
+        </tr>
+        <tr>
+            <td>Co-founder</td>
+            <td>CEO</td>
+        </tr>
+    </table>
+</section>
+<br>
+</body>
+</html>
